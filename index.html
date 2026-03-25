@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEM SALUT Tuban</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2>BEM SALUT Tuban</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#divisi">Divisi</a></li>
+        <li><a href="#proker">Proker</a></li>
+        <li><a href="#dokumentasi">Dokumentasi</a></li>
+        <li><a href="#daftar">Daftar</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>BEM SALUT Tuban</h1>
+        <p>Organisasi Mahasiswa Aktif, Kreatif, dan Inovatif</p>
+        <button class="btn">Gabung Sekarang</button>
+    </div>
+</section>
+
+<!-- Tentang -->
+<section id="tentang" class="section">
+    <h2>Tentang BEM</h2>
+    <p>BEM SALUT Tuban adalah wadah aspirasi mahasiswa untuk berkembang dan berkontribusi.</p>
+</section>
+
+<!-- Divisi -->
+<section id="divisi" class="section">
+    <h2>Divisi Kami</h2>
+    <div class="cards">
+        <div class="card"><h3>📢 Ketua</h3><p>Komunikasi eksternal</p></div>
+        <div class="card"><h3>📢 Wakil Ketua </h3><p>Komunikasi eksternal</p></div>
+        <div class="card"><h3>📢 Seketaris</h3><p>Komunikasi eksternal</p></div>
+        <div class="card"><h3>📢 Bendahara</h3><p>Komunikasi eksternal</p></div>
+        <div class="card"><h3>📢 Humas</h3><p>Komunikasi eksternal</p></div>
+        <div class="card"><h3>🎨 Multimedia</h3><p>Desain & media</p></div>
+        <div class="card"><h3>📚 Keagamaank</h3><p>Dukungan belajar</p></div>
+        <div class="card"><h3>📚 Kewirausahaan</h3><p>Dukungan belajar</p></div>
+    </div>
+    </div>
+</section>
+
+<!-- Proker -->
+<section id="proker" class="section">
+    <h2>Program Kerja</h2>
+    <div class="cards">
+        <div class="card"><h3>belum ACC</h3><p>Edukasi mahasiswa</p></div>
+
+    </div>
+</section>
+
+<!-- Statistik -->
+<section class="stats">
+    <div class="stat"><h2>20</h2><p>Anggota</p></div>
+    <div class="stat"><h2>8</h2><p>Program</p></div>
+    <div class="stat"><h2>8</h2><p>Divisi</p></div>
+</section>
+
+<!-- Dokumentasi SUPER -->
+<section id="dokumentasi" class="section">
+    <h2>Dokumentasi</h2>
+    <div class="gallery">
+
+        <div class="galeri-item">
+            <img src="1.jpeg" onclick="openModal(this.src)">
+            <div class="overlay">Pelantikan </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <img id="modal-img">
+</div>
+
+
+<!-- Kontak -->
+<section id="kontak" class="section">
+    <h2>Kontak</h2>
+    <p>📍 Tuban</p>
+    <p>📧 bem@salut.com</p>
+</section>
+
+<footer>
+    <p>© 2026 BEM SALUT Tuban</p>
+</footer>
+
+<script>
+function openModal(src){
+    document.getElementById("modal").style.display="block";
+    document.getElementById("modal-img").src=src;
+}
+function closeModal(){
+    document.getElementById("modal").style.display="none";
+}
+function kirimData(e){
+    e.preventDefault();
+    alert("Pendaftaran berhasil!");
+}
+</script>
+
+</body>
+</html>
